@@ -1,38 +1,8 @@
-<style>
-  body {
-    background-color: #f5f5dc; /* Beige claro */
-    color: #0a192f; /* Azul oscuro */
-    font-family: Arial, sans-serif;
-  }
-  h1, h2, h3 {
-    color: #003366; /* Azul más oscuro */
-    text-align: center;
-  }
-  p {
-    color: #0a192f;
-  }
-  .container {
-    text-align: center;
-    padding: 20px;
-  }
-  .button {
-    background-color: #003366;
-    color: white;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-  }
-  .button:hover {
-    background-color: #002244;
-  }
-  .image-center {
-    display: block;
-    margin: 0 auto;
-    border-radius: 10px;
-  }
-</style>
-# 🚀 **Gestión y Mejora de Proyectos con Scrum**
+<div style="text-align: center;">
+  <h1 style="color:#003366;">🚀 Gestión y Mejora de Proyectos con Scrum</h1>
+  <p style="color:#0a192f;">Optimiza la gestión de proyectos con metodologías ágiles.</p>
+  <a href="#guia" style="background-color:#003366;color:white;padding:10px 20px;text-decoration:none;border-radius:5px;">Empieza tu Proyecto</a>
+</div>
 
 Bienvenido a nuestra plataforma, donde te ayudamos a optimizar la gestión de proyectos con metodologías ágiles. Aprende paso a paso, accede a recursos exclusivos y lleva tus proyectos al siguiente nivel.
 
