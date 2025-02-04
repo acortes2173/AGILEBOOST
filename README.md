@@ -1,4 +1,6 @@
-# 🚀 **Gestión y Mejora de Proyectos con Scrum**
+# 🚀 **AgileBoost**
+
+![LOGO aGILE BOOST](scrum-framework.jpg)
 
 Bienvenido a nuestra plataforma, donde te ayudamos a optimizar la gestión de proyectos con metodologías ágiles. Aprende paso a paso, accede a recursos exclusivos y lleva tus proyectos al siguiente nivel.
 
