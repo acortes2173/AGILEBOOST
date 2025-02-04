@@ -2,7 +2,7 @@
     <img src="LOGOAGILEBOOST.jpg" alt="LOGO AGILE BOOST" width="100%">
 </div>
 
-
+Optimiza la gestión de proyectos con metodologías ágiles.
 
 Bienvenido a nuestra plataforma, donde te ayudamos a optimizar la gestión de proyectos con metodologías ágiles. Aprende paso a paso, accede a recursos exclusivos y lleva tus proyectos al siguiente nivel.
 
