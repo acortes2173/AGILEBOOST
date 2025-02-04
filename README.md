@@ -1,6 +1,6 @@
 # 🚀 **AgileBoost**
 
-![LOGO AGILE BOOST](LOGO-AGILE-BOOST.jpg)
+![LOGO AGILE BOOST](LOGOAGILEBOOST.jpg)
 
 
 Bienvenido a nuestra plataforma, donde te ayudamos a optimizar la gestión de proyectos con metodologías ágiles. Aprende paso a paso, accede a recursos exclusivos y lleva tus proyectos al siguiente nivel.
