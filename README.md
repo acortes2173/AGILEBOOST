@@ -1,6 +1,6 @@
 # 🚀 **AgileBoost**
 
-![LOGO aGILE BOOST](images/LOGO-aGILE-BOOST.png)
+![LOGO aGILE BOOST]([images/LOGO-aGILE-BOOST.png](https://github.com/acortes2173/PM-Pathway/blob/main/LOGO%20aGILE%20BOOST.png))
 
 Bienvenido a nuestra plataforma, donde te ayudamos a optimizar la gestión de proyectos con metodologías ágiles. Aprende paso a paso, accede a recursos exclusivos y lleva tus proyectos al siguiente nivel.
 
