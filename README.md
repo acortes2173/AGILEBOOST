@@ -1,9 +1,4 @@
 <div align="center">
-    <h1>🚀 AgileBoost</h1>
-    <p>Optimiza la gestión de proyectos con metodologías ágiles.</p>
-</div>
-
-<div align="center">
     <img src="LOGOAGILEBOOST.jpg" alt="LOGO AGILE BOOST" width="100%">
 </div>
 
