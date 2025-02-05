@@ -21,10 +21,31 @@
         .fade-in {
             animation: fadeIn 1.5s ease-in-out;
         }
-        .image {
-            animation: bounceIn 1s ease-in-out;
-            width: 50%;
-            margin-top: 20px;
+
+        /* Hero Section */
+        .hero {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 60vh; /* Altura ajustable */
+            text-align: center;
+            color: white;
+            background: url('innovation.jpg') no-repeat center center/cover; /* Imagen de fondo */
+            position: relative;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Sombra para mejorar legibilidad */
+        }
+
+        .subtitle {
+            font-size: 1.5rem;
+            font-weight: 300;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
         }
         .container {
             width: 80%;
