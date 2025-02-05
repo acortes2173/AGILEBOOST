@@ -33,9 +33,10 @@
         }
         .grid {
             display: flex;
-            justify-content: space-around;
-            flex-wrap: wrap;
-            gap: 20px;
+            justify-content: space-between;
+            align-items: stretch;
+            flex-wrap: nowrap;
+            gap: 10px;
         }
         .box {
             background: white;
@@ -45,8 +46,8 @@
             text-align: center;
             animation: fadeIn 1.5s ease-in-out;
             flex: 1;
-            min-width: 200px;
-            max-width: 250px;
+            min-width: 180px;
+            max-width: 220px;
         }
         .box img {
             width: 100%;
@@ -85,7 +86,7 @@
         <img src="https://source.unsplash.com/800x400/?business,team" class="image">
     </div>
 
-<div class="container">
+    <div class="container">
         <h2>🛠 Guía Interactiva de Proyectos</h2>
         <p>Aquí encontrarás un asistente paso a paso con todas las fases esenciales de un proyecto.</p>
         <div class="grid">
