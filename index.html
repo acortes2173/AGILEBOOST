@@ -80,6 +80,9 @@
             align-items: stretch;
             flex-wrap: nowrap;
             gap: 10px;
+            max-width: 90%;
+            overflow-x: auto;
+            margin: auto;
         }
         .box {
             background: white;
@@ -131,7 +134,11 @@
             text-decoration: none;
         }
         /* Responsive Design */
-    @media (max-width: 768px) {
+    @media (max-width: 650px) {
+        .container {
+            display: block !important;
+        }
+        
       h1 {
         font-size: 2rem;
       }
@@ -180,39 +187,37 @@
         </div>  
     </div>
 
-    <div id="guia" class="container">
+    <div id="guia" class="container" style="display: grid !important;">
         <h2>🛠 Guía Interactiva de Proyectos</h2>
         <p>Aquí encontrarás un asistente paso a paso con todas las fases esenciales de un proyecto.
-        Cada fase incluye:<br> ✔️ Plantillas descargables<br>
-✔️ Ejemplos prácticos<br>
-✔️ Consejos de expertos</p>
-   <div class="grid">
-            <div class="box">
-        <h3>Inicio</h3>
-                <p>Define los objetivos, stakeholders y requisitos del proyecto.</p>
-                <img src="https://github.com/acortes2173/AGILEBOOST/blob/main/inicio.jpeg?raw=true" alt="Inicio">
-            </div>
-            <div class="box">
-        <h3>Planificación</h3>
-                <p>Crea el cronograma, define los entregables y asigna recursos.</p>
-                <img src="https://github.com/acortes2173/AGILEBOOST/blob/main/planificacion.jpg?raw=true" alt="Planificación">
-            </div>
-            <div class="box">
-        <h3>Ejecución</h3>
-                <p>Implementa el plan y gestiona el equipo.</p>
-                <img src="https://github.com/acortes2173/AGILEBOOST/blob/main/ejecucion.jpg?raw=true" alt="Ejecución">
-            </div>
-            <div class="box">
-        <h3>Monitoreo y Control</h3>
-                <p>Evalúa el progreso y ajusta estrategias.</p>
-                <img src="https://github.com/acortes2173/AGILEBOOST/blob/main/images.jpeg?raw=true" alt="Monitoreo y Control">
-            </div>
-            <div class="box">
-        <h3>Cierre</h3>
-                <p>Realiza la retrospectiva y documenta los aprendizajes.</p>
-                <img src="https://github.com/acortes2173/AGILEBOOST/blob/main/cierre.jpg?raw=true" alt="Cierre">
-            </div>
-       </div>
+        Cada fase incluye:<br> ✔️ Plantillas descargables<br>✔️ Ejemplos prácticos<br>✔️ Consejos de expertos</p>
+       <div class="grid">
+                <div class="box">
+            <h3>Inicio</h3>
+                    <p>Define los objetivos, stakeholders y requisitos del proyecto.</p>
+                    <img src="https://github.com/acortes2173/AGILEBOOST/blob/main/inicio.jpeg?raw=true" alt="Inicio">
+                </div>
+                <div class="box">
+            <h3>Planificación</h3>
+                    <p>Crea el cronograma, define los entregables y asigna recursos.</p>
+                    <img src="https://github.com/acortes2173/AGILEBOOST/blob/main/planificacion.jpg?raw=true" alt="Planificación">
+                </div>
+                <div class="box">
+            <h3>Ejecución</h3>
+                    <p>Implementa el plan y gestiona el equipo.</p>
+                    <img src="https://github.com/acortes2173/AGILEBOOST/blob/main/ejecucion.jpg?raw=true" alt="Ejecución">
+                </div>
+                <div class="box">
+            <h3>Monitoreo y Control</h3>
+                    <p>Evalúa el progreso y ajusta estrategias.</p>
+                    <img src="https://github.com/acortes2173/AGILEBOOST/blob/main/images.jpeg?raw=true" alt="Monitoreo y Control">
+                </div>
+                <div class="box">
+            <h3>Cierre</h3>
+                    <p>Realiza la retrospectiva y documenta los aprendizajes.</p>
+                    <img src="https://github.com/acortes2173/AGILEBOOST/blob/main/cierre.jpg?raw=true" alt="Cierre">
+                </div>
+           </div>
     </div>
 
     <div id="simulador" class="container">
