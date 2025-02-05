@@ -59,6 +59,8 @@
         .container {
             width: 80%;
             margin: auto;
+            display: flex;
+            justify-content: space-between;
             padding: 20px;
             background: white;
             border-radius: 10px;
@@ -67,24 +69,11 @@
             margin-top: 40px;
             animation: fadeIn 1.5s ease-in-out;
             transition: transform 0.3s;
-        .container {
-            width: 90vw; /* 90% del ancho del navegador */
-            margin: 0 auto; /* Centra el contenedor */
-            overflow-x: auto; /* Habilita el scroll horizontal si es necesario */
-            overflow-y: hidden; /* Elimina el scroll vertical */
-            white-space: nowrap; /* Mantiene las imágenes en una sola línea */
-            display: flex; /* Usa flexbox para alinear imágenes */
-            align-items: center; /* Centra las imágenes verticalmente */
-         }
-
-        .container img {
-            max-width: 100%; /* Evita que las imágenes sean más grandes que el contenedor */
-            height: auto; /* Mantiene la proporción */
-            margin: 0 10px; /* Espaciado entre imágenes */
-        }
         .container:hover {
             transform: translateY(-5px);
         }
+
+            
         .grid {
             display: flex;
             justify-content: space-between;
@@ -179,12 +168,16 @@
     </div>
 
     <div id="inicio" class="container">
-         <img src="https://github.com/acortes2173/AGILEBOOST/blob/main/incio23.jpg?raw=true" style="float: right; margin-left: 15px; width: 50%; border-radius: 10px;" alt="Inicio" style="width: 100%; max-width: 600px; border-radius: 10px; margin-bottom: 15px;">
-        <h2>🔹 Empieza hoy mismo</h2>
-        <p>La gestión efectiva de proyectos es clave para el éxito de cualquier equipo...</p>
-      <p>Aplicando metodologías como Scrum y herramientas ágiles, puedes mejorar la productividad y alcanzar objetivos estratégicos de manera eficiente.</p>
-        <p>📢 Haz clic en el botón para iniciar tu proyecto y sigue nuestra guía paso a paso.</p>
-        <a href="#" class="button">👉 Empieza tu Proyecto</a>
+        <div class="text-container">
+            <h2>🔹 Empieza hoy mismo</h2>
+            <p>La gestión efectiva de proyectos es clave para el éxito de cualquier equipo...</p>
+            <p>Aplicando metodologías como Scrum y herramientas ágiles, puedes mejorar la productividad y alcanzar objetivos estratégicos de manera eficiente.</p>
+            <p>📢 Haz clic en el botón para iniciar tu proyecto y sigue nuestra guía paso a paso.</p>
+            <a href="#" class="button">👉 Empieza tu Proyecto</a>
+        </div>
+        <div class="img-container">
+             <img src="https://github.com/acortes2173/AGILEBOOST/blob/main/incio23.jpg?raw=true">
+        </div>  
     </div>
 
     <div id="guia" class="container">
