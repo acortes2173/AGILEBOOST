@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,6 +16,7 @@
             margin: 0;
             padding: 0;
         }
+
         .navbar {
             display: flex;
             justify-content: center;
@@ -25,23 +27,25 @@
             top: 0;
             z-index: 1000;
         }
+
         .navbar a {
             color: white;
             text-decoration: none;
             margin: 0 15px;
             font-weight: bold;
         }
+
         .navbar a:hover {
             color: #FFD700;
-            }
+        }
+
         .hero {
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            height: 60vh;
             background: url('https://source.unsplash.com/1600x900/?project,management') no-repeat center center/cover;
-            color: white;
+            color: #003366;
             text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
             border-radius: 10px;
             margin: 20px auto;
@@ -49,18 +53,22 @@
             width: 90%;
             animation: fadeIn 1.5s ease-in-out;
         }
+
         .hero h1 {
             font-size: 4rem;
             margin-bottom: 10px;
         }
+
         .hero h2 {
             font-size: 2rem;
-       }
+        }
+
         .container {
-            width: 80%;
+            width: 90%;
             margin: auto;
-            display: flex;
-            justify-content: space-between;
+            display: grid;
+            grid-template-columns: 60% 35%;
+            grid-gap: 5%;
             padding: 20px;
             background: white;
             border-radius: 10px;
@@ -69,53 +77,86 @@
             margin-top: 40px;
             animation: fadeIn 1.5s ease-in-out;
             transition: transform 0.3s;
-        .container:hover {
-            transform: translateY(-5px);
+
+            .container:hover {
+                transform: translateY(-5px);
+            }
+
+            .img-container {
+                width: 90%;
+
+            }
+
+            .img-container img {
+                width: 100%;
+                ;
+            }
+
+
+            .grid {
+                display: flex;
+                justify-content: space-between;
+                align-items: stretch;
+                flex-wrap: nowrap;
+                gap: 10px;
+                max-width: 90%;
+                overflow-x: auto;
+                margin: auto;
+            }
+
+            .box {
+                background: white;
+                padding: 20px;
+                border-radius: 10px;
+                box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+                text-align: center;
+                animation: fadeIn 1.5s ease-in-out;
+                flex: 1;
+                min-width: 180px;
+                max-width: 220px;
+            }
+
+            .box img {
+                width: 100%;
+                max-width: 200px;
+                border-radius: 10px;
+            }
+
+            H1,
+            h2,
+            h3 {
+                color: #003366;
+            }
+
+            .button {
+                background-color: #003366;
+                color: white;
+                padding: 10px 20px;
+                text-decoration: none;
+                border-radius: 5px;
+                font-weight: bold;
+                display: inline-block;
+                margin: 20px;
+            }
+
+            .button:hover {
+                background-color: #002244;
+            }
+
+
+            .social-buttons {
+                width: 200px;
+                display: flex;
+                justify-content: space-between;
+                margin: auto;
+            }
+
+            .social-buttons a {
+                font-size: 40px;
+                color: #666;
+            }
         }
 
-            
-        .grid {
-            display: flex;
-            justify-content: space-between;
-            align-items: stretch;
-            flex-wrap: nowrap;
-            gap: 10px;
-            max-width: 90%;
-            overflow-x: auto;
-            margin: auto;
-        }
-        .box {
-            background: white;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-            text-align: center;
-            animation: fadeIn 1.5s ease-in-out;
-            flex: 1;
-            min-width: 180px;
-            max-width: 220px;
-        }
-        .box img {
-            width: 100%;
-            max-width: 200px;
-            border-radius: 10px;
-        }
-        H1, h2, h3 {
-            color: #003366;
-        }
-        .button {
-            background-color: #003366;
-            color: white;
-            padding: 10px 20px;
-            text-decoration: none;
-            border-radius: 5px;
-            font-weight: bold;
-            display: inline-block;
-            margin: 20px;
-        }
-        .button:hover {
-            background-color: #002244;
-        }
         .whatsapp-icon {
             position: fixed;
             bottom: 20px;
@@ -133,32 +174,34 @@
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
             text-decoration: none;
         }
-           /* Responsive Design */
-         @media (max-width: 650px) {
+
+        /* Responsive Design */
+        @media (max-width: 650px) {
             .container {
                 display: block !important;
+                margin: 5% !important;
             }
-        
+
             h1 {
                 font-size: 2rem;
             }
-        
+
             p {
                 font-size: 0.9rem;
             }
-        
+
             .product-images img {
                 width: 100%;
                 max-width: 100%;
             }
-        
+
             .whatsapp-icon:hover {
                 background-color: #128C7E;
             }
         }
-            
     </style>
 </head>
+
 <body>
     <div class="navbar">
         <span>AGILEBOOST</span>
@@ -171,97 +214,121 @@
         <a href="#contacto">Contacto</a>
     </div>
 
-     <div class="hero">
+    <div class="hero">
         <h1>AGILEBOOST</h1>
         <h2>PROJECT MANAGEMENT AND IMPROVEMENT</h2>
-</div> 
+    </div>
     </div>
 
     <div id="inicio" class="container">
         <div class="text-container">
             <h2>🔹 Empieza hoy mismo</h2>
             <p>La gestión efectiva de proyectos es clave para el éxito de cualquier equipo...</p>
-            <p>Aplicando metodologías como Scrum y herramientas ágiles, puedes mejorar la productividad y alcanzar objetivos estratégicos de manera eficiente.</p>
+            <p>Aplicando metodologías como Scrum y herramientas ágiles, puedes mejorar la productividad y alcanzar
+                objetivos estratégicos de manera eficiente.</p>
             <p>📢 Haz clic en el botón para iniciar tu proyecto y sigue nuestra guía paso a paso.</p>
             <a href="#" class="button">👉 Empieza tu Proyecto</a>
         </div>
         <div class="img-container">
-             <img src="https://github.com/acortes2173/AGILEBOOST/blob/main/incio23.jpg?raw=true">
-        </div>  
+            <img src="https://github.com/acortes2173/AGILEBOOST/blob/main/incio23.jpg?raw=true">
+        </div>
     </div>
 
-    <div id="guia" class="container" style="display: grid !important;">
+    <div id="guia" class="container"
+        style="display: grid !important; grid-template-columns: none !important; grid-gap: 0 !important;">
         <h2>🛠 Guía Interactiva de Proyectos</h2>
         <p>Aquí encontrarás un asistente paso a paso con todas las fases esenciales de un proyecto.
-        Cada fase incluye:<br> ✔️ Plantillas descargables<br>✔️ Ejemplos prácticos<br>✔️ Consejos de expertos</p>
-       <div class="grid">
-                <div class="box">
-            <h3>Inicio</h3>
-                    <p>Define los objetivos, stakeholders y requisitos del proyecto.</p>
-                    <img src="https://github.com/acortes2173/AGILEBOOST/blob/main/inicio.jpeg?raw=true" alt="Inicio">
-                </div>
-                <div class="box">
-            <h3>Planificación</h3>
-                    <p>Crea el cronograma, define los entregables y asigna recursos.</p>
-                    <img src="https://github.com/acortes2173/AGILEBOOST/blob/main/planificacion.jpg?raw=true" alt="Planificación">
-                </div>
-                <div class="box">
-            <h3>Ejecución</h3>
-                    <p>Implementa el plan y gestiona el equipo.</p>
-                    <img src="https://github.com/acortes2173/AGILEBOOST/blob/main/ejecucion.jpg?raw=true" alt="Ejecución">
-                </div>
-                <div class="box">
-            <h3>Monitoreo y Control</h3>
-                    <p>Evalúa el progreso y ajusta estrategias.</p>
-                    <img src="https://github.com/acortes2173/AGILEBOOST/blob/main/images.jpeg?raw=true" alt="Monitoreo y Control">
-                </div>
-                <div class="box">
-            <h3>Cierre</h3>
-                    <p>Realiza la retrospectiva y documenta los aprendizajes.</p>
-                    <img src="https://github.com/acortes2173/AGILEBOOST/blob/main/cierre.jpg?raw=true" alt="Cierre">
-                </div>
-           </div>
+            Cada fase incluye:<br> ✔️ Plantillas descargables<br>✔️ Ejemplos prácticos<br>✔️ Consejos de expertos</p>
+        <div class="grid">
+            <div class="box">
+                <h3>Inicio</h3>
+                <p>Define los objetivos, stakeholders y requisitos del proyecto.</p>
+                <img src="https://github.com/acortes2173/AGILEBOOST/blob/main/inicio.jpeg?raw=true" alt="Inicio">
+            </div>
+            <div class="box">
+                <h3>Planificación</h3>
+                <p>Crea el cronograma, define los entregables y asigna recursos.</p>
+                <img src="https://github.com/acortes2173/AGILEBOOST/blob/main/planificacion.jpg?raw=true"
+                    alt="Planificación">
+            </div>
+            <div class="box">
+                <h3>Ejecución</h3>
+                <p>Implementa el plan y gestiona el equipo.</p>
+                <img src="https://github.com/acortes2173/AGILEBOOST/blob/main/ejecucion.jpg?raw=true" alt="Ejecución">
+            </div>
+            <div class="box">
+                <h3>Monitoreo y Control</h3>
+                <p>Evalúa el progreso y ajusta estrategias.</p>
+                <img src="https://github.com/acortes2173/AGILEBOOST/blob/main/images.jpeg?raw=true"
+                    alt="Monitoreo y Control">
+            </div>
+            <div class="box">
+                <h3>Cierre</h3>
+                <p>Realiza la retrospectiva y documenta los aprendizajes.</p>
+                <img src="https://github.com/acortes2173/AGILEBOOST/blob/main/cierre.jpg?raw=true" alt="Cierre">
+            </div>
+        </div>
     </div>
 
     <div id="simulador" class="container">
-        <img src="https://github.com/acortes2173/AGILEBOOST/blob/main/simulador.png?raw=true" style="float: left; margin-right: 15px; width: 50%; border-radius: 10px;" alt="Simulador de Proyectos" style="width: 100%; max-width: 600px; border-radius: 10px; margin-bottom: 15px;">
-        <h2>🛠 Simulador de Proyectos</h2>
-        <p>🔹 Personaliza tu plan de trabajo.<br>
-        Rellena un breve formulario con los detalles de tu proyecto y obtén un plan estructurado con tareas clave y recomendaciones.</p>
-        <a href="#" class="button">Acceder al Simulador</a>
+        <div class="text-container">
+            <h2>🛠 Simulador de Proyectos</h2>
+            <p>🔹 Personaliza tu plan de trabajo.<br>
+                Rellena un breve formulario con los detalles de tu proyecto y obtén un plan estructurado con tareas
+                clave y recomendaciones.</p>
+            <a href="#" class="button">Acceder al Simulador</a>
+        </div>
+        <div class="img-container">
+            <img src="https://github.com/acortes2173/AGILEBOOST/blob/main/simulador.png?raw=true">
+        </div>
     </div>
 
     <div id="recursos" class="container">
-        <img src="https://github.com/acortes2173/AGILEBOOST/blob/main/recursos.jpg?raw=true" style="float: right; margin-left: 15px; width: 50%; border-radius: 10px;" alt="Herramientas y Recursos" style="width: 100%; max-width: 600px; border-radius: 10px; margin-bottom: 15px;">
-        <h2>🔍 Herramientas y Recursos</h2>
-        <p>📌 Plantillas, guías y checklists para gestionar tu proyecto.<br>
-        📌 Guías detalladas sobre metodologías ágiles y tradicionales.<br>
-        📌 Checklists para cada fase de tu proyecto.</p>
-        <a href="#" class="button">Descargar Recursos</a>
+        <div class="text-container">
+            <h2>🔍 Herramientas y Recursos</h2>
+            <p>📌 Plantillas, guías y checklists para gestionar tu proyecto.<br>
+                📌 Guías detalladas sobre metodologías ágiles y tradicionales.<br>
+                📌 Checklists para cada fase de tu proyecto.</p>
+            <a href="#" class="button">Descargar Recursos</a>
+        </div>
+        <div class="img-container">
+            <img src="https://github.com/acortes2173/AGILEBOOST/blob/main/recursos.jpg?raw=true">
+        </div>
     </div>
 
     <div id="comunidad" class="container">
-        <img src="https://github.com/acortes2173/AGILEBOOST/blob/main/comunidad.png?raw=true" style="float: left; margin-right: 15px; width: 50%; border-radius: 10px;" alt="Comunidad y Blog" style="width: 100%; max-width: 600px; border-radius: 10px; margin-bottom: 15px;">
-        <h2>🌍 Comunidad y Blog</h2>
-        <p>📢 Conéctate con otros profesionales en gestión de proyectos.<br>
-        📖 Accede a artículos sobre tendencias, herramientas y certificaciones.</p>
-        <a href="#" class="button">Explorar Comunidad</a>
+        <div class="text-container">
+            <h2>🌍 Comunidad y Blog</h2>
+            <p>📢 Conéctate con otros profesionales en gestión de proyectos.<br>
+                📖 Accede a artículos sobre tendencias, herramientas y certificaciones.</p>
+            <a href="#" class="button">Explorar Comunidad</a>
+        </div>
+        <div class="img-container">
+            <img src="https://github.com/acortes2173/AGILEBOOST/blob/main/comunidad.png?raw=true">
+        </div>
+
     </div>
 
     <div id="certificacion" class="container">
-        <img src="https://github.com/acortes2173/AGILEBOOST/blob/main/certificacion.png?raw=true" style="float: right; margin-left: 15px; width: 50%; border-radius: 10px;" alt="Certificación" style="width: 100%; max-width: 200px; border-radius: 10px; margin-bottom: 15px;">
-        <h2>🎓 Certificación Básica PM</h2>
-        <p>Obtén un certificado de participación en cursos cortos de gestión de proyectos.<br>
-        📜 Valida tus conocimientos con un diploma digital.</p>
-        <a href="#" class="button">Ver Cursos y Certificación</a>
+        <div class="text-container">
+            <h2>🎓 Certificación Básica PM</h2>
+            <p>Obtén un certificado de participación en cursos cortos de gestión de proyectos.<br>
+                📜 Valida tus conocimientos con un diploma digital.</p>
+            <a href="#" class="button">Ver Cursos y Certificación</a>
+        </div>
+        <div class="img-container">
+            <img src="https://github.com/acortes2173/AGILEBOOST/blob/main/certificacion.png?raw=true">
+        </div>
     </div>
 
     <div id="contacto" class="container">
         <h2>📞 Contáctanos</h2>
-        <p>📧 Email: Servicioalcliente@agileboost.com<br>🌐 Sitio Web: <a href="https://github.com/acortes2173/AGILEBOOST">www.Agileboost.com</a> <br>📍 Ubicación: Bogotá, Colombia <br>🚀 ¡Lleva tus proyectos al siguiente nivel con nosotros!</p>
+        <p>📧 Email: Servicioalcliente@agileboost.com<br>🌐 Sitio Web: <a
+                href="https://github.com/acortes2173/AGILEBOOST">www.Agileboost.com</a> <br>📍 Ubicación: Bogotá,
+            Colombia <br>🚀 ¡Lleva tus proyectos al siguiente nivel con nosotros!</p>
     </div>
 
-   <div class="container">
+    <div class="container">
         <h2> Síguenos en Redes Sociales</h2>
         <div class="social-buttons">
             <a href="https://www.linkedin.com" class="linkedin" target="_blank">
@@ -278,18 +345,18 @@
             </a>
         </div>
     </div>
-   <!-- Footer -->
-  <footer class="footer">
-    <p>&copy; 2025 AGILEBOOST. Todos los derechos reservados.</p>
-  </footer>
-  
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2025 AGILEBOOST. Todos los derechos reservados.</p>
+    </footer>
+
     <a href="https://wa.me/573046000181" class="whatsapp-icon" target="_blank">
         <i class="fab fa-whatsapp"></i>
     </a>
-    
-    <script src="https://cdn.botpress.cloud/webchat/v2.2/inject.js"></script>
-<script src="https://files.bpcontent.cloud/2025/02/05/15/20250205155840-ZSB4VIH0.js"></script>
-    
-</body>
-</html>
 
+    <script src="https://cdn.botpress.cloud/webchat/v2.2/inject.js"></script>
+    <script src="https://files.bpcontent.cloud/2025/02/05/15/20250205155840-ZSB4VIH0.js"></script>
+
+</body>
+
+</html>
