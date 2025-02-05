@@ -4,53 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gestión de Proyectos con Scrum</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <style>
         body {
             text-align: center;
             font-family: 'Poppins', sans-serif;
-            background-color: #BEDFD7;
-            color: #e0e0e0;
+            background-color: #C0C0C0;
+            color: #333;
             margin: 0;
             padding: 0;
         }
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(-20px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-        .fade-in {
-            animation: fadeIn 1.5s ease-in-out;
-        }
-
-        /* Hero Section */
-        .hero {
+        .navbar {
             display: flex;
-            flex-direction: column;
             justify-content: center;
-            align-items: center;
-            height: 60vh; /* Altura ajustable */
-            text-align: center;
+            background-color: #003366;
+            padding: 15px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+        .navbar a {
             color: white;
-            background: url('innovation.jpg') no-repeat center center/cover; /* Imagen de fondo */
-            position: relative;
-        }
-
-        .hero h1 {
-            font-size: 3rem;
+            text-decoration: none;
+            margin: 0 15px;
             font-weight: bold;
-            margin-bottom: 10px;
-            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Sombra para mejorar legibilidad */
         }
-
-        .subtitle {
-            font-size: 1.5rem;
-            font-weight: 300;
-            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+        .navbar a:hover {
+            color: #FFD700;
         }
         .container {
             width: 80%;
             margin: auto;
             padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            margin-top: 80px;
         }
         .grid {
             display: flex;
@@ -75,7 +67,7 @@
             max-width: 200px;
             border-radius: 10px;
         }
-        h1, h2, h3 {
+        H1, h2, h3 {
             color: #003366;
         }
         .button {
@@ -97,7 +89,7 @@
             right: 20px;
             z-index: 1000;
             background-color: #25D366;
-            color: #fff;
+            color: white;
             width: 50px;
             height: 50px;
             border-radius: 50%;
@@ -114,23 +106,32 @@
     </style>
 </head>
 <body>
-    <h1 class="fade-in">🚀 Bienvenido a Agile Boost</h1>
-    <img src="LOGOAGILEBOOST.jpg" class="image">
-    
-    <div class="container">
-        <h2>🏠 Inicio</h2>
-        <h3>📌 La Importancia de la Gestión de Proyectos</h3>
-        <p>La gestión efectiva de proyectos es clave para el éxito de cualquier equipo. Aplicando metodologías como Scrum y herramientas ágiles, puedes mejorar la productividad y alcanzar objetivos estratégicos de manera eficiente.</p>
+    <div class="navbar">
+        <a href="#inicio">Inicio</a>
+        <a href="#guia">Guía</a>
+        <a href="#simulador">Simulador</a>
+        <a href="#recursos">Recursos</a>
+        <a href="#comunidad">Comunidad</a>
+        <a href="#certificacion">Certificación</a>
+        <a href="#contacto">Contacto</a>
+    </div>
+
+    <div id="inicio" class="container">
+      
+        <h1>AGILEBOOST</h1>
+        <h2>PROJECT MANAGEMENT AND IMPROVEMENT</h2>
+        <p>La gestión efectiva de proyectos es clave para el éxito de cualquier equipo...</p>
+      <p>La gestión efectiva de proyectos es clave para el éxito de cualquier equipo. Aplicando metodologías como Scrum y herramientas ágiles, puedes mejorar la productividad y alcanzar objetivos estratégicos de manera eficiente.</p>
         <p>🔹 Empieza hoy mismo</p>
         <p>📢 Haz clic en el botón para iniciar tu proyecto y sigue nuestra guía paso a paso.</p>
         <a href="#" class="button">👉 Empieza tu Proyecto</a>
         <img src="https://raw.githubusercontent.com/acortes2173/AGILEBOOST/main/imagenes/inicio.jpeg" class="image">
     </div>
 
-    <div class="container">
+    <div id="guia" class="container">
         <h2>🛠 Guía Interactiva de Proyectos</h2>
         <p>Aquí encontrarás un asistente paso a paso con todas las fases esenciales de un proyecto.</p>
-        <div class="grid">
+   <div class="grid">
             <div class="box">
                 <h3>Inicio</h3>
                 <p>Define los objetivos, stakeholders y requisitos del proyecto.</p>
@@ -156,46 +157,41 @@
                 <p>Realiza la retrospectiva y documenta los aprendizajes.</p>
                 <img src="https://github.com/acortes2173/AGILEBOOST/blob/main/cierre.jpg?raw=true" alt="Cierre">
             </div>
-        </div>
+       </div>
     </div>
 
-    <div class="container">
+    <div id="simulador" class="container">
         <h2>🛠 Simulador de Proyectos</h2>
         <p>🔹 Personaliza tu plan de trabajo.</p>
         <a href="#" class="button">Acceder al Simulador</a>
     </div>
 
-    <div class="container">
+    <div id="recursos" class="container">
         <h2>🔍 Herramientas y Recursos</h2>
-        <p>📌 Plantillas en Excel y Notion para la planificación.<br>
+        <p>📌 Plantillas, guías y checklists para gestionar tu proyecto.</p>
         📌 Guías detalladas sobre metodologías ágiles y tradicionales.<br>
         📌 Checklists para cada fase de tu proyecto.</p>
         <a href="#" class="button">Descargar Recursos</a>
-        <img src="https://source.unsplash.com/800x400/?technology,tools" class="image">
     </div>
 
-    <div class="container">
+    <div id="comunidad" class="container">
         <h2>🌍 Comunidad y Blog</h2>
         <p>📢 Conéctate con otros profesionales en gestión de proyectos.</p>
         <a href="#" class="button">Explorar Comunidad</a>
-        <img src="https://source.unsplash.com/800x400/?team,collaboration" class="image">
     </div>
 
-    <div class="container">
-        <h2>🎓 Certificación Básica PM (Opcional - Monetización)</h2>
+    <div id="certificacion" class="container">
+        <h2>🎓 Certificación Básica PM</h2>
         <p>Obtén un certificado de participación en cursos cortos de gestión de proyectos.</p>
-        <p>📜 Valida tus conocimientos con un diploma digital.</p>
         <a href="#" class="button">Ver Cursos y Certificación</a>
     </div>
 
-<div class="container">
+    <div id="contacto" class="container">
         <h2>📞 Contáctanos</h2>
-        <p>📧 Email: contacto@tuempresa.com<br>
-        🌐 Sitio Web: <a href="https://www.tuempresa.com">www.tuempresa.com</a><br>
-        📍 Ubicación: Ciudad, País</p>
+        <p>📧 Email: contacto@tuempresa.com<br>🌐 Sitio Web: <a href="https://www.tuempresa.com">www.tuempresa.com</a></p>
     </div>
 
-    <div class="container">
+   <div class="container">
         <h2>🔗 Síguenos en Redes Sociales</h2>
         <div class="social-buttons">
             <a href="https://www.linkedin.com" class="linkedin" target="_blank">
@@ -212,8 +208,8 @@
             </a>
         </div>
     </div>
-
-    <a href="https://wa.me/573192592038" class="whatsapp-icon" target="_blank">
+  
+    <a href="https://wa.me/573046000181" class="whatsapp-icon" target="_blank">
         <i class="fab fa-whatsapp"></i>
     </a>
 </body>
