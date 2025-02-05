@@ -31,6 +31,25 @@
             margin: auto;
             padding: 20px;
         }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            justify-content: center;
+        }
+        .box {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+        .box img {
+            width: 100%;
+            max-width: 200px;
+            border-radius: 10px;
+        }
         h1, h2, h3 {
             color: #003366;
         }
@@ -54,22 +73,41 @@
     <img src="LOGOAGILEBOOST.jpg" class="image">
     
     <div class="container">
-        <p>Optimiza la gestión de proyectos con metodologías ágiles.</p>
-        <p>Bienvenido a nuestra plataforma, donde te ayudamos a optimizar la gestión de proyectos con metodologías ágiles. Aprende paso a paso, accede a recursos exclusivos y lleva tus proyectos al siguiente nivel.</p>
-        <a href="#guia" class="button">Empieza tu Proyecto</a>
-    </div>
-
-    <div class="container">
-        <h2>🏠 Inicio</h2>
-        <h3>📌 La Importancia de la Gestión de Proyectos</h3>
-        <p>La gestión efectiva de proyectos es clave para el éxito de cualquier equipo...</p>
-        <img src="https://source.unsplash.com/800x400/?business,team" class="image">
-    </div>
-
-    <div class="container">
         <h2>🛠 Guía Interactiva de Proyectos</h2>
         <p>Aquí encontrarás un asistente paso a paso con todas las fases esenciales de un proyecto.</p>
-        <img src="https://source.unsplash.com/800x400/?scrum,meeting" class="image">
+        <div class="grid">
+            <div class="box">
+                <h3>Inicio</h3>
+                <p>Define los objetivos, stakeholders y requisitos del proyecto.</p>
+                <img src="https://source.unsplash.com/200x200/?planning" alt="Inicio">
+            </div>
+            <div class="box">
+                <h3>Planificación</h3>
+                <p>Crea el cronograma, define los entregables y asigna recursos.</p>
+                <img src="https://source.unsplash.com/200x200/?schedule" alt="Planificación">
+            </div>
+            <div class="box">
+                <h3>Ejecución</h3>
+                <p>Implementa el plan y gestiona el equipo.</p>
+                <img src="https://source.unsplash.com/200x200/?teamwork" alt="Ejecución">
+            </div>
+            <div class="box">
+                <h3>Monitoreo y Control</h3>
+                <p>Evalúa el progreso y ajusta estrategias.</p>
+                <img src="https://source.unsplash.com/200x200/?analytics" alt="Monitoreo y Control">
+            </div>
+            <div class="box">
+                <h3>Cierre</h3>
+                <p>Realiza la retrospectiva y documenta los aprendizajes.</p>
+                <img src="https://source.unsplash.com/200x200/?success" alt="Cierre">
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2>🛠 Simulador de Proyectos</h2>
+        <p>🔹 Personaliza tu plan de trabajo.</p>
+        <a href="#" class="button">Acceder al Simulador</a>
     </div>
 
     <div class="container">
@@ -82,12 +120,6 @@
     </div>
 
     <div class="container">
-        <h2>🎯 Simulador de Proyectos</h2>
-        <p>🔹 Personaliza tu plan de trabajo.</p>
-        <a href="#" class="button">Acceder al Simulador</a>
-    </div>
-
-    <div class="container">
         <h2>🌍 Comunidad y Blog</h2>
         <p>📢 Conéctate con otros profesionales en gestión de proyectos.</p>
         <a href="#" class="button">Explorar Comunidad</a>
@@ -95,12 +127,13 @@
     </div>
 
     <div class="container">
-        <h2>🎓 Certificación Básica PM</h2>
+        <h2>🎓 Certificación Básica PM (Opcional - Monetización)</h2>
+        <p>Obtén un certificado de participación en cursos cortos de gestión de proyectos.</p>
         <p>📜 Valida tus conocimientos con un diploma digital.</p>
         <a href="#" class="button">Ver Cursos y Certificación</a>
     </div>
 
-    <div class="container">
+<div class="container">
         <h2>📞 Contáctanos</h2>
         <p>📧 Email: contacto@tuempresa.com<br>
         🌐 Sitio Web: <a href="https://www.tuempresa.com">www.tuempresa.com</a><br>
